@@ -1,0 +1,53 @@
+{
+  "variables": [],
+  "info": {
+    "name": "MI Questions",
+    "_postman_id": "04d5766f-879a-57ee-ec7f-93fc233806b2",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "6fd1aa9f-8653-948f-cbbc-2eef167061be",
+      "name": "Set Order Answers (st1)",
+      "request": {
+        "url": "https://st1-managementinformation.service.ttlnonprod.local/ManagementInformationService/Service.svc/json/Process",
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"__type\": \"SubmitOrderBookingFlowAnswersRequest:http://thetrainline.com/ManagementInformationService/1.0\",\n  \"BookerCustomerId\": 69318970,\n  \"OrderId\": \"ef49c469-e719-4207-913f-7d306e9788b5\",\n  \"CorporateReference\": \"SME1098833\",\n  \"OrderAnswers\": [\n    {\n      \"QuestionText\": \"Notes\",\n      \"Text\": \"This is a note\"\n    },\n      {\n      \"QuestionText\": \"Cost Centre\",\n      \"Text\": \"abcxyx\"\n    }\n  ]\n}"
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "51361dda-4d64-b756-4818-25583aac6184",
+      "name": "Set Order Answers",
+      "request": {
+        "url": "https://c07-managementinformation.service.ttlnonprod.local/ManagementInformationService/Service.svc/json/Process",
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"__type\": \"SubmitOrderBookingFlowAnswersRequest:http://thetrainline.com/ManagementInformationService/1.0\",\n\t\"BookerCustomerId\": 70201160,\n\t\"OrderId\": \"ef49c469-e719-4207-913f-7d306e9788b5\",\n\t\"CorporateReference\": \"SME1099738\",\n\t\"OrderAnswers\": [\n\t\t{\n\t\t\t\"QuestionText\": \"Notes\",\n\t\t\t\"Text\": \"This is a note\"\n\t\t},\n\t\t\t{\n\t\t\t\"QuestionText\": \"Cost Centre\",\n\t\t\t\"Text\": \"3\"\n\t\t}\n\t]\n}"
+        },
+        "description": ""
+      },
+      "response": []
+    }
+  ]
+}
